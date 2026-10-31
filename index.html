@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="El portafolio de Ximena, Eduardo y Leonardo: lo que aprendemos y construimos en equipo.">
+  <title>Nuestro primer portafolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado contenedor">
+    <a class="marca" href="#inicio">Nuestro portafolio<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido" class="contenedor">
+    <section id="inicio" class="presentacion" aria-labelledby="titulo">
+      <p class="etiqueta">APRENDIENDO A CREAR PARA LA WEB</p>
+      <h1 id="titulo">Hola, somos<br><span>Ximena, Eduardo y Leonardo.</span></h1>
+      <p class="introduccion">Este es nuestro primer portafolio. Un pequeño espacio para compartir nuestras ideas, practicar y mostrar lo que vamos construyendo en equipo.</p>
+      <a class="boton" href="#proyectos">Ver nuestros proyectos <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section id="nosotros" class="seccion nosotros" aria-labelledby="titulo-nosotros">
+      <div>
+        <p class="etiqueta">01 / NUESTRO EQUIPO</p>
+        <h2 id="titulo-nosotros">Aprender, practicar<br>y crear juntos.</h2>
+      </div>
+      <div>
+        <p>Somos Ximena, Eduardo y Leonardo. Estamos dando nuestros primeros pasos en el desarrollo web. Nos gusta aprender con proyectos pequeños, compartir ideas y apoyarnos en el proceso.</p>
+        <p>Creamos este portafolio para aprender cómo funcionan Git y GitHub al trabajar entre tres personas.</p>
+        <p>Estas son las herramientas que estamos practicando:</p>
+        <ul class="habilidades" aria-label="Herramientas">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Git</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion" aria-labelledby="titulo-proyectos">
+      <p class="etiqueta">02 / LO QUE VAMOS CREANDO</p>
+      <h2 id="titulo-proyectos">Nuestros proyectos</h2>
+      <p>Un primer paso y algunas ideas para seguir practicando.</p>
+      <div class="proyectos">
+        <article class="proyecto">
+          <span class="numero" aria-hidden="true">01</span>
+          <p class="estado">ESTE PROYECTO</p>
+          <h3>Nuestro primer portafolio</h3>
+          <p>Una página sencilla hecha con HTML y CSS para practicar el uso de Git y GitHub en equipo.</p>
+          <p class="tecnologias">HTML · CSS · Git</p>
+        </article>
+        <article class="proyecto">
+          <span class="numero" aria-hidden="true">02</span>
+          <p class="estado">IDEA PARA PRACTICAR</p>
+          <h3>Nuestra próxima página</h3>
+          <p>Un espacio reservado para el siguiente proyecto. Cada práctica es una oportunidad para aprender algo nuevo.</p>
+          <p class="tecnologias">Próximamente</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion contacto" aria-labelledby="titulo-contacto">
+      <p class="etiqueta">03 / SIGAMOS EN CONTACTO</p>
+      <h2 id="titulo-contacto">¿Creamos algo juntos?</h2>
+      <p>Puedes escribirnos para compartir ideas o aprender con nosotros.</p>
+      <a class="correo" href="#">leosternunez@gmail.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="contenedor pie">
+    <p>Nuestro primer portafolio</p>
+    <p>Hecho por Ximena, Eduardo y Leonardo.</p>
+  </footer>
+</body>
+</html>
