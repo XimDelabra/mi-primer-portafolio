@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light;
+  --fondo: #f8f7f3;
+  --texto: #262b28;
+  --secundario: #5c625d;
+  --acento: #30634b;
+  --borde: #dcded7;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+a { color: inherit; }
+a:hover { color: var(--acento); }
+a:focus-visible { outline: 3px solid var(--acento); outline-offset: 6px; }
+
+.contenedor { width: min(100% - 48px, 960px); margin-inline: auto; }
+.encabezado { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 28px; border-bottom: 1px solid var(--borde); }
+.marca { font-size: 20px; font-weight: 700; text-decoration: none; }
+.marca span { color: var(--acento); }
+nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
+nav a { text-decoration: none; }
+
+.presentacion { padding-block: 96px; max-width: 720px; }
+.etiqueta { margin: 0 0 20px; color: var(--acento); font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+h1, h2, h3 { line-height: 1.15; }
+h1 { margin: 0 0 28px; font-size: clamp(48px, 8vw, 82px); letter-spacing: -3px; }
+h1 span { color: var(--acento); }
+h2 { margin: 0 0 22px; font-size: clamp(28px, 4vw, 36px); letter-spacing: -1px; }
+h3 { margin: 16px 0; font-size: 22px; }
+p { color: var(--secundario); }
+.introduccion { max-width: 560px; margin-bottom: 30px; font-size: 18px; }
+.boton { display: inline-flex; gap: 32px; padding: 12px 22px; border-radius: 5px; background: var(--acento); color: white; text-decoration: none; font-size: 14px; }
+.boton:hover { background: #244b39; color: white; }
+.seccion { padding-block: 58px; border-top: 1px solid var(--borde); scroll-margin-top: 24px; }
+.nosotros { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.nosotros p:first-child { margin-top: 0; }
+.habilidades { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 24px 0 0; list-style: none; }
+.habilidades li { padding: 4px 14px; border: 1px solid var(--borde); border-radius: 4px; font-size: 13px; }
+.proyectos { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; }
+.proyecto { padding: 28px; border: 1px solid var(--borde); border-radius: 6px; background: #fffefa; }
+.numero { color: var(--acento); font-size: 28px; }
+.estado { margin-top: 24px; font-size: 10px; letter-spacing: 1.5px; }
+.tecnologias { margin: 24px 0 0; color: var(--acento); font-size: 12px; }
+.contacto { padding-block: 64px; }
+.correo { display: inline-block; margin-top: 12px; font-size: clamp(18px, 4vw, 24px); text-underline-offset: 6px; overflow-wrap: anywhere; }
+.pie { display: flex; justify-content: space-between; gap: 20px; padding-block: 20px; border-top: 1px solid var(--borde); font-size: 12px; }
+.saltar { position: absolute; top: -100px; left: 24px; padding: 10px 16px; background: white; }
+.saltar:focus { top: 12px; }
+
+@media (max-width: 640px) {
+  .encabezado { align-items: flex-start; flex-direction: column; gap: 14px; }
+  nav { gap: 20px; }
+  .presentacion { padding-block: 64px; }
+  .nosotros, .proyectos { grid-template-columns: 1fr; gap: 24px; }
+  .seccion { padding-block: 40px; }
+  .pie { flex-direction: column; gap: 0; }
+  .pie p { margin-block: 4px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
